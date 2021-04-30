@@ -108,6 +108,13 @@ main > div {
 .info .status {
   font-size: 0.9rem;
 }
+footer {
+  display: block;
+  margin-top: 10px;
+}
+footer a {
+  text-decoration: none;
+}
 
 @media screen and (min-width: 500px) and (max-width: 1050px) {
   main {
@@ -159,16 +166,3 @@ main > div {
     grid-template-columns: 1fr;
   }
 }
-
-/* @media screen and (max-width: 500px) {
-  .info {
-    color: red;
-  }
-  header {
-    background-color: red;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 50px 0px;
-    padding: 0px 10px;
-  }
-} */
