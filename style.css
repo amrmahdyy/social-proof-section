@@ -8,6 +8,8 @@ body {
   max-width: 1100px;
   margin: 0px auto;
   color: white;
+  background: left top no-repeat url(../images/bg-pattern-top-mobile.svg),
+    right bottom no-repeat url(../images/bg-pattern-bottom-mobile.svg);
 }
 .very-dark-magenta {
   color: hsl(300, 43%, 22%);
@@ -72,7 +74,7 @@ header .rating {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px 10px;
+  grid-gap: 10px 10px;
 }
 main > div {
   background-color: hsl(300, 43%, 22%);
@@ -106,5 +108,19 @@ main > div {
 }
 .info .status {
   font-size: 0.9rem;
-  /* margin-top: 0px; */
+}
+@media screen and (min-width: 500px) and (max-width: 1050px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .card-1 {
+    grid-column: 1/7;
+  }
+  .card-2 {
+    grid-column: 7/13;
+  }
+  .card-3 {
+    grid-column: 4/10;
+  }
 }
