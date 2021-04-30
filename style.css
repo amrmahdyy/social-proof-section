@@ -93,6 +93,12 @@ main > div {
   transition: transform 0.5s;
   margin-right: 14px;
 }
+.card-2 {
+  margin-top: 10px;
+}
+.card-3 {
+  margin-top: 20px;
+}
 .info .pic:hover {
   transform: scale(1.3);
 }
@@ -108,6 +114,7 @@ main > div {
 .info .status {
   font-size: 0.9rem;
 }
+
 footer {
   display: block;
   margin-top: 10px;
@@ -122,12 +129,15 @@ footer a {
     grid-template-columns: repeat(12, 1fr);
   }
   .card-1 {
+    margin: 0;
     grid-column: 1/7;
   }
   .card-2 {
+    margin: 0;
     grid-column: 7/13;
   }
   .card-3 {
+    margin: 0;
     grid-column: 4/10;
   }
   .rating > div {
@@ -154,7 +164,15 @@ footer a {
     /* justify-content: center;
     align-content: center; */
   }
-
+  .card-1 {
+    margin: 0;
+  }
+  .card-2 {
+    margin: 0;
+  }
+  .card-3 {
+    margin: 0;
+  }
   .rating .rate-2 {
     margin-left: 0px;
   }
